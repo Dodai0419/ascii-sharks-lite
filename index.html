@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ascii sharks</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #000; }
+      ascii-ocean { width: 100vw; height: 100vh; font-family: ui-monospace, Menlo, Consolas, monospace; }
+    </style>
+  </head>
+  <body>
+    <!-- Double-click this file: no server, no build. ?sharks=thresher,hammerhead picks the sharks. -->
+    <ascii-ocean></ascii-ocean>
+    <script>
+      const sharks = new URLSearchParams(location.search).get("sharks");
+      if (sharks) document.querySelector("ascii-ocean").setAttribute("sharks", sharks);
+    </script>
+    <!-- loaded after the attribute is set: the element starts as soon as it is defined -->
+    <script src="ascii-sharks.js"></script>
+  </body>
+</html>

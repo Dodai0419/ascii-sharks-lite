@@ -1,0 +1,5 @@
+{
+  "name": "ascii-sharks-lite",
+  "owner": { "name": "Dodai0419" },
+  "plugins": [{ "name": "ascii-sharks-lite", "source": "./", "description": "Put swimming ASCII sharks on any web page, in your terminal or in a README. One file, no build." }]
+}

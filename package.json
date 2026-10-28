@@ -1,0 +1,8 @@
+{
+  "name": "ascii-sharks-lite",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "main": "ascii-sharks.js",
+  "scripts": { "test": "node --test test/sharks.test.mjs" },
+  "license": "MIT"
+}
